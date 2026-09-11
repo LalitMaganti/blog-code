@@ -1,0 +1,56 @@
+diff --git a/build.zig b/build.zig
+index 63b72978bf..91cc9cc575 100644
+--- a/build.zig
++++ b/build.zig
+@@ -847,7 +847,7 @@ fn configureObj(b: *Build, opts: *BunBuildOptions, obj: *Compile) void {
+     obj.use_llvm = !opts.no_llvm;
+     obj.use_lld = if (opts.os == .mac or opts.os == .linux) false else !opts.no_llvm;
+     if (opts.lto) {
+-        obj.lto = .full;
++        obj.lto = .thin;
+         obj.use_lld = true;
+     }
+ 
+diff --git a/scripts/build/deps/webkit.ts b/scripts/build/deps/webkit.ts
+index c940da88ec..a42df2ab76 100644
+--- a/scripts/build/deps/webkit.ts
++++ b/scripts/build/deps/webkit.ts
+@@ -227,7 +227,7 @@ export const webkit: Dependency = {
+     // (macOS: Homebrew headers + system libs; Linux: libicu-dev) — cmake
+     // auto-detects.
+     const optFlags: string[] = computeCpuTargetFlags(cfg);
+-    if (cfg.lto) optFlags.push("-flto=full");
++    if (cfg.lto) optFlags.push("-flto=thin");
+     if (cfg.pgoGenerate) optFlags.push(`-fprofile-generate=${cfg.pgoGenerate}`);
+     if (cfg.pgoUse) {
+       optFlags.push(
+diff --git a/scripts/build/flags.ts b/scripts/build/flags.ts
+index df5558089b..0932c95f68 100644
+--- a/scripts/build/flags.ts
++++ b/scripts/build/flags.ts
+@@ -397,10 +397,15 @@ export const globalFlags: Flag[] = [
+ 
+   // ─── LTO (compile-side) ───
+   {
+-    flag: "-flto=full",
++    flag: "-flto=thin",
+     when: c => c.unix && c.lto,
+     desc: "Full link-time optimization (not thin)",
+   },
++  {
++    flag: "-fsplit-lto-unit",
++    when: c => c.unix && c.lto,
++    desc: "Keep split-LTO module flags consistent with Zig and WebKit bitcode",
++  },
+   {
+     flag: "-flto",
+     when: c => c.windows && c.lto,
+@@ -712,7 +717,7 @@ export const linkerFlags: Flag[] = [
+ 
+   // ─── LTO (link-side) ───
+   {
+-    flag: ["-flto=full", "-fwhole-program-vtables", "-fforce-emit-vtables"],
++    flag: ["-flto=thin", "-fwhole-program-vtables", "-fforce-emit-vtables"],
+     when: c => c.unix && c.lto,
+     desc: "LTO at link time (matches compile-side -flto=full)",
+   },

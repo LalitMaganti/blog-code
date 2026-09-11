@@ -1,0 +1,12 @@
+diff --git a/scripts/build/zig.ts b/scripts/build/zig.ts
+--- a/scripts/build/zig.ts
++++ b/scripts/build/zig.ts
+@@ -55,7 +55,7 @@
+ function codegenThreads(cfg: Config): number {
+   if (cfg.windows) return 1;
+-  if (cfg.lto) return 1;
++  if (cfg.lto) return 4;
+   if (cfg.ci) {
+     // ASAN is a test-only build (not shipped), so cross-shard IPO loss is
+     // fine and the speedup is worth it. The count is FIXED so zig-only and
+     // link-only — which run on different machines — agree on the artifact

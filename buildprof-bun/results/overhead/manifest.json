@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-09-09T03:53:38Z",
+  "platform": "Linux-7.0.14-201.fc44.x86_64-x86_64-with-glibc2.43",
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           40 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  12\nOn-line CPU(s) list:                     0-11\nVendor ID:                               GenuineIntel\nModel name:                              Intel Xeon Processor (Icelake)\nCPU family:                              6\nModel:                                   134\nThread(s) per core:                      2\nCore(s) per socket:                      6\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                4992.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx pdpe1gb rdtscp lm arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault pti ssbd ibrs ibpb fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb xsaveopt xsavec xgetbv1 avx_vnni arat umip pku ospke waitpkg gfni vaes vpclmulqdq movdiri movdir64b serialize\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               192 KiB (6 instances)\nL1i cache:                               192 KiB (6 instances)\nL2 cache:                                24 MiB (6 instances)\nL3 cache:                                16 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-11\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Mitigation; Aligned branch/return thunks\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Mitigation; PTE Inversion\nVulnerability Mds:                       Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\nVulnerability Meltdown:                  Mitigation; PTI\nVulnerability Mmio stale data:           Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Vulnerable: No microcode\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Retpoline\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected",
+  "recorder_version": "buildprof 0.2.2",
+  "recorder_sha256": "e5c8bffab29c3a7bb22e8c7887251f3a60652f435ea54ef0a337823e11b38cee",
+  "recorder_source_commit": "ac3175a031f4e6294bb7c921aeb1daf9f7b3662a",
+  "cargo": "cargo 1.96.1 (356927216 2026-06-26)",
+  "cc": "cc (GCC) 16.1.1 20260515 (Red Hat 16.1.1-2)\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "projects": [
+    {
+      "name": "ripgrep",
+      "cwd": "/home/lalitm/bun-bench/overhead-20260909/ripgrep",
+      "commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7"
+    },
+    {
+      "name": "redis",
+      "cwd": "/home/lalitm/bun-bench/overhead-20260909/redis",
+      "commit": "78432ed8e48aba009721a15a88ea8f5c9597b8e5"
+    }
+  ],
+  "pairs": 5,
+  "seed": 20260909,
+  "method": "one unmeasured warm-up per project, then five randomized baseline/recorded pairs; clean outside timer; wall clock includes trace serialization; -j6; downloads and filesystem caches warm; ccache and incremental compilation disabled; no compiler tracing"
+}

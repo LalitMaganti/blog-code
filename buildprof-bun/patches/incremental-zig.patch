@@ -1,0 +1,9 @@
+diff --git a/src/bun_core/output.zig b/src/bun_core/output.zig
+index 4504f6a..d2e5a22 100644
+--- a/src/bun_core/output.zig
++++ b/src/bun_core/output.zig
+@@ -1,3 +1,4 @@
++// buildprof: representative incremental-build edit
+ // These are threadlocal so we don't have stdout/stderr writing on top of each other
+ threadlocal var source: Source = undefined;
+ threadlocal var source_set: bool = false;

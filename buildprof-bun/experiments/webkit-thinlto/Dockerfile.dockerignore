@@ -1,0 +1,16 @@
+node_modules
+**/node_modules
+LayoutTests
+JSTests
+zig-out
+zig-build
+**/*.o
+**/*.a
+**/.next
+.git
+**/CMakeCache.txt
+CMakeCache.txt
+WebKitBuild
+ManualTests
+Websites
+WebDriverTests

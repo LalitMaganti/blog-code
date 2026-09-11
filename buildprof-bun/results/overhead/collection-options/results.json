@@ -1,0 +1,560 @@
+[
+  {
+    "project": "ripgrep",
+    "repeat": -1,
+    "mode": "warmup",
+    "seconds": 12.608103887992911,
+    "exit_code": 0,
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 0,
+    "mode": "filesystem",
+    "seconds": 12.48770252300892,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-0-filesystem.buildprof",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 0,
+    "mode": "process-only",
+    "seconds": 12.340998247003881,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-0-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 0,
+    "mode": "untraced",
+    "seconds": 12.461848470993573,
+    "exit_code": 0,
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 1,
+    "mode": "process-only",
+    "seconds": 12.240296231000684,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-1-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 1,
+    "mode": "filesystem",
+    "seconds": 12.385813150991453,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-1-filesystem.buildprof",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 1,
+    "mode": "untraced",
+    "seconds": 12.268870069994591,
+    "exit_code": 0,
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 2,
+    "mode": "untraced",
+    "seconds": 12.247696712991456,
+    "exit_code": 0,
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 2,
+    "mode": "process-only",
+    "seconds": 12.669923259003554,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-2-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 2,
+    "mode": "filesystem",
+    "seconds": 12.394309262977913,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-2-filesystem.buildprof",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 3,
+    "mode": "untraced",
+    "seconds": 12.257200661988463,
+    "exit_code": 0,
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 3,
+    "mode": "process-only",
+    "seconds": 12.299662781995721,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-3-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 3,
+    "mode": "filesystem",
+    "seconds": 12.456657158007147,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-3-filesystem.buildprof",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 4,
+    "mode": "untraced",
+    "seconds": 12.389053244987736,
+    "exit_code": 0,
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 4,
+    "mode": "process-only",
+    "seconds": 12.235275714978343,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-4-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "ripgrep",
+    "repeat": 4,
+    "mode": "filesystem",
+    "seconds": 12.429471372015541,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/ripgrep-4-filesystem.buildprof",
+      "--",
+      "cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--offline",
+      "-j6"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": -1,
+    "mode": "warmup",
+    "seconds": 27.243635616992833,
+    "exit_code": 0,
+    "command": [
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 0,
+    "mode": "filesystem",
+    "seconds": 31.88830418899306,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-0-filesystem.buildprof",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 0,
+    "mode": "process-only",
+    "seconds": 27.11479244500515,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-0-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 0,
+    "mode": "untraced",
+    "seconds": 26.70125322500826,
+    "exit_code": 0,
+    "command": [
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 1,
+    "mode": "process-only",
+    "seconds": 27.039977141015697,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-1-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 1,
+    "mode": "filesystem",
+    "seconds": 31.72865996399196,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-1-filesystem.buildprof",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 1,
+    "mode": "untraced",
+    "seconds": 26.829376210982446,
+    "exit_code": 0,
+    "command": [
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 2,
+    "mode": "untraced",
+    "seconds": 26.64486924200901,
+    "exit_code": 0,
+    "command": [
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 2,
+    "mode": "process-only",
+    "seconds": 26.81073418899905,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-2-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 2,
+    "mode": "filesystem",
+    "seconds": 32.29129889799515,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-2-filesystem.buildprof",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 3,
+    "mode": "untraced",
+    "seconds": 26.991818454000168,
+    "exit_code": 0,
+    "command": [
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 3,
+    "mode": "process-only",
+    "seconds": 26.872875206987374,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-3-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 3,
+    "mode": "filesystem",
+    "seconds": 31.860077015997376,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-3-filesystem.buildprof",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 4,
+    "mode": "untraced",
+    "seconds": 26.78352165099932,
+    "exit_code": 0,
+    "command": [
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 4,
+    "mode": "process-only",
+    "seconds": 27.140742915013107,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-4-process-only.buildprof",
+      "--no-file-events",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  },
+  {
+    "project": "redis",
+    "repeat": 4,
+    "mode": "filesystem",
+    "seconds": 32.18219877302181,
+    "exit_code": 0,
+    "command": [
+      "/home/lalitm/bun-bench/collection-controls-20260909/target/release/buildprof",
+      "--no-open",
+      "-o",
+      "/home/lalitm/bun-bench/overhead-20260909/collection-options/redis-4-filesystem.buildprof",
+      "--",
+      "make",
+      "-j6",
+      "MALLOC=libc",
+      "BUILD_TLS=no"
+    ]
+  }
+]
