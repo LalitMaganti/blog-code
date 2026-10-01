@@ -1,0 +1,4 @@
+/deps/
+/build/
+/keys/
+__pycache__/
